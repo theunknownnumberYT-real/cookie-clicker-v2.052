@@ -16862,7 +16862,7 @@ window.onload=function()
 				LoadLang('loc/'+lang+'.js?v='+Game.version,function(){
 					var launch=function(){
 						Game.Launch();
-						if (top!=self) Game.launch
+						if (top!=self) Game.launch();
 						else
 						{
 						
