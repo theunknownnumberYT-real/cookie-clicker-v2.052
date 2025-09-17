@@ -102,7 +102,7 @@ var LoadScript=function(url,callback,error)
 	{
 		js.onload=callback;
 	}
-	
+	if (error) js.onerror=error;
 	
 	js.setAttribute('src',url);
 	document.head.appendChild(js);
@@ -16862,9 +16862,9 @@ window.onload=function()
 				LoadLang('loc/'+lang+'.js?v='+Game.version,function(){
 					var launch=function(){
 						Game.Launch();
-						if (top!=self) Game.ErrorFrame();
-						else
-						{
+						
+						
+						
 							console.log('[=== '+choose([
 								'Oh, hello!',
 								'hey, how\'s it hangin',
