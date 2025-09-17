@@ -16846,7 +16846,7 @@ LAUNCH THIS THING
 
 
 //try {Game.Launch();}
-
+//catch(err) {console.log('ERROR : '+err.message);}
 
 window.onload=function()
 {
@@ -16863,7 +16863,6 @@ window.onload=function()
 					var launch=function(){
 						Game.Launch();
 						if (top!=self) Game.Launch();
-						else
 						{
 						
 							console.log('[=== '+choose([
