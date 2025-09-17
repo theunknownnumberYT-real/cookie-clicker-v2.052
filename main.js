@@ -102,7 +102,7 @@ var LoadScript=function(url,callback,error)
 	{
 		js.onload=callback;
 	}
-	if (error) js.onerror=error;
+	
 	
 	js.setAttribute('src',url);
 	document.head.appendChild(js);
