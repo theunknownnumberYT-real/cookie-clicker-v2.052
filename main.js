@@ -6,7 +6,7 @@ All this code is copyright Orteil, 2013-2023.
 Hello, and welcome to the joyous mess that is main.js. Code contained herein is not guaranteed to be good, consistent, or sane. Most of this is years old at this point and harkens back to simpler, cruder times. In particular I've tried to maintain compatibility with fairly old versions of javascript, which means luxuries such as 'let', arrow functions and string literals are unavailable.
 As Cookie Clicker is rife with puns and tricky wordplay, localization was never intended to be possible - but ended up happening anyway as part of the Steam port. As a result, usage of strings is somewhat unorthodox in some places.
 Have a nice trip, and stay safe.
-Spoilers ahead.
+Spoilers ahead
 http://orteil.dashnet.org
 */
 
@@ -16862,7 +16862,7 @@ window.onload=function()
 				LoadLang('loc/'+lang+'.js?v='+Game.version,function(){
 					var launch=function(){
 						Game.Launch();
-						if (top!=self) Game.launch();
+						if (top!=self) Game.Launch();
 						else
 						{
 						
