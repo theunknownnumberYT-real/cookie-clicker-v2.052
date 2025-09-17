@@ -16846,7 +16846,7 @@ LAUNCH THIS THING
 
 
 //try {Game.Launch();}
-//catch(err) {console.log('ERROR : '+err.message);}
+
 
 window.onload=function()
 {
@@ -16862,7 +16862,7 @@ window.onload=function()
 				LoadLang('loc/'+lang+'.js?v='+Game.version,function(){
 					var launch=function(){
 						Game.Launch();
-						if (top!=self) Game.Launch(){
+						if (top!=self) Game.Launch();
 						else
 						{
 						
